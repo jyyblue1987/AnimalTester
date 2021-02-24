@@ -1,8 +1,10 @@
 public class AnimalTester {
     public static void main(String[] args) {
+        // instantiate two Spider objects
         Spider spidy1 = new Spider();
         Spider spidy2 = new Spider(8, 8, "insects", "very quiet");
 
+        //  instantiate a Lion object
         Lion lion = new Lion(2, 1, "meat", "roar");
 
         System.out.println("Going to print out info about spidy1");

@@ -1,16 +1,19 @@
 public class Animal {
+    // four instance variables 
     protected int legs = 0;
     protected int eyes = 0;
     protected String eat = "";
     protected String sound = "";
 
+    // no parameters contructor
     Animal() {
+        // four instance variables assigned to either 0 or “nothing”
         setLegs(0);
         setEyes(0);
         setEat("nothing");
         setSound("nothing");
     }
-
+    // four incoming parameters and will set the instance variables
     Animal(int l, int e, String eat, String sound) {
         setLegs(l);
         setEyes(e);
@@ -18,6 +21,7 @@ public class Animal {
         setSound(sound);
     }
 
+    // mutator (set) methods and accessor (get) methods
     final public int getLegs() {
         return legs;
     }
@@ -50,6 +54,7 @@ public class Animal {
         sound = v;
     }
 
+    // print information about the current state (i.e. value) of each instance variable.
     public void printAnimal() {
         System.out.println(String.format("From Animal: This animal has %d legs, %d eyes, eats %s, sounds \"%s\"", getLegs(), getEyes(), getEat(), getSound()));
     }
